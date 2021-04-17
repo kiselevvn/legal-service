@@ -1,0 +1,16 @@
+{% extends "layouts/landing-layout.html" %}
+{% load static slider_comments news_cards question_answer legal_service_cards %}
+
+{% block content  %}
+  <main id="main">
+
+    {% news_cards %}
+
+    {% legal_service_cards %}
+
+    {% slider_comments %}
+
+    {% question_answer %}
+
+  </main>
+{% endblock %}

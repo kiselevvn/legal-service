@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center mb-0" >
+    <div class="container" data-aos="fade-in">
+      <h1>{{ config.SITE_NAME }}</h1>
+      <h2>{{ config.SITE_DESCRIPTION }}</h2>
+      <div class="d-flex align-items-center">
+        <i class="bx bxs-right-arrow-alt get-started-icon"></i>
+        <a href="#services" class="btn-get-started scrollto">Список услуг</a>
+      </div>
+    </div>
+  </section
+
+  {% block content %}
+  {% endblock %}
+
+{% endblock %}

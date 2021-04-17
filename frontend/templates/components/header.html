@@ -1,0 +1,61 @@
+{% load static %}
+{% get_media_prefix as MEDIA_URL %}
+
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <ul>
+          {% if config.CONTACT_EMAIL %}
+            <li><i class="icofont-envelope"></i><a href="mailto:{{ config.CONTACT_EMAIL }}"> {{ config.CONTACT_EMAIL }}</a></li>
+          {% endif %}
+
+          {% if config.CONTACT_PHONE %}
+            <li><i class="icofont-phone"></i> {{ config.CONTACT_PHONE }}</li>
+          {% endif %}
+
+          {% if config.CONTACT_TIME %}
+            <li><i class="icofont-clock-time icofont-flip-horizontal"></i> {{ config.CONTACT_TIME }}</li>
+          {% endif %}
+        </ul>
+
+      </div>
+      {% if user.is_authenticated  %}
+        <div class="cta">
+          <a href="/admin/" class="scrollto">Админ панель</a>
+        </div>
+      {% endif %}
+
+    </div>
+  </section>
+
+  <header id="header">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        {% if config.LOGO_IMG %}
+          <a href="{% url 'landing' %}"><img src="{{ MEDIA_URL }}{{ config.LOGO_IMG }}" alt="" class="img-fluid"></a>
+        {% else %}
+          <h1 class="text-light"><a href="{% url 'landing' %}"><span>{{ config.LOGO_TEXT }}</span></a></h1>
+        {% endif %}
+      </div>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+        {% if request.path == "/" %}
+          <li><a href="{% url 'landing' %}">Главная</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="#comments">Отзывы</a></li>
+          <li><a href="#question-answer">Вопрос-ответ</a></li>
+        {% else %}
+          <li><a href="{% url 'landing' %}">Главная</a></li>
+          <li><a href="{% url 'landing' %}#services">Услуги</a></li>
+          <li><a href="{% url 'landing' %}#news">Новости</a></li>
+          <li><a href="{% url 'landing' %}#comments">Отзывы</a></li>
+          <li><a href="{% url 'landing' %}#question-answer">Вопрос-ответ</a></li>
+        {% endif %}
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
