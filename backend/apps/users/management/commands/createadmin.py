@@ -13,13 +13,9 @@ class Command(BaseCommand):
             )
             return
 
-        options = {}
-
-        options["password"] = "admin"
-        options["username"] = "admin"
-        options["email"] = "admin@admin.com"
-
-        user = get_user_model().objects.create_user(
-            options["username"], options["email"], options["password"]
+        user = get_user_model().objects.create_superuser(
+            username="admin",
+            email="admin@admin.com",
+            password="admin",
         )
         user.save()
