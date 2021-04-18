@@ -13,11 +13,11 @@ DEFAULT_APPS = [
 ]
 
 PROJECT_APPS = [
-    "backend.apps.services",
-    "backend.apps.users",
-    "backend.apps.news",
-    "backend.apps.legal_service",
-    "backend.apps.comments",
+    "apps.services",
+    "apps.users",
+    "apps.news",
+    "apps.legal_service",
+    "apps.comments",
 ]
 
 DEVELOPER_APPS = [

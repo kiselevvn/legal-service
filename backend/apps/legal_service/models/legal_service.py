@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils.translation import gettext as _
-from backend.apps.services.models import (
+from apps.services.models import (
     DateCreatedMixin,
     DateUpdatedMixin,
 )

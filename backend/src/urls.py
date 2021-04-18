@@ -8,7 +8,7 @@ from django.conf.urls.i18n import i18n_patterns
 urlpatterns = [
     path("admin/", admin.site.urls),
     re_path(r"^ckeditor/", include("ckeditor_uploader.urls")),
-    path("news/", include("backend.apps.news.urls")),
+    path("news/", include("apps.news.urls")),
     path(
         "", TemplateView.as_view(template_name="landing.html"), name="landing"
     ),
