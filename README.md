@@ -26,6 +26,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 Далее из терминала windows введите следующую команду (win + r)
 
+![power shell](https://github.com/kiselevvn/legal-service/blob/main/assets/img/cmd.PNG?raw=true)
+
 ```cmd
 choco install make
 ```
@@ -34,7 +36,6 @@ choco install make
 
 Откройте терминал windows, перейдите в корень проекта и запустите следующую команду:
 
-![power shell](https://github.com/kiselevvn/legal-service/blob/main/assets/img/cmd.PNG?raw=true)
 
 ```cmd
 make install
