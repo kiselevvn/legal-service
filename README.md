@@ -24,6 +24,8 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
+Далее из терминала windows введите следующую команду (win + r)
+
 ```cmd
 choco install make
 ```
@@ -31,6 +33,8 @@ choco install make
 ## Установка проекта ##
 
 Откройте терминал windows, перейдите в корень проекта и запустите следующую команду:
+
+![power shell](https://github.com/kiselevvn/legal-service/blob/main/assets/img/cmd.PNG?raw=true)
 
 ```cmd
 make install
