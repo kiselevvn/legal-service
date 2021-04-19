@@ -24,7 +24,7 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
-Далее из терминала windows введите следующую команду (win + r)
+Далее из терминала windows введите следующую команду (win + r), впишите "cmd" и нажмите "ок"
 
 ![power shell](https://github.com/kiselevvn/legal-service/blob/main/assets/img/cmd.PNG?raw=true)
 
