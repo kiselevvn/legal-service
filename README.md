@@ -1,10 +1,16 @@
 ## Подготовка к установке ##
 
+Для начала работы, скачайте архив приложения и распакуйте в удобное мето
+
+![скачать проект](https://github.com/kiselevvn/legal-service/blob/main/assets/img/download.PNG?raw=true)
+
 Для работы приложения необходим python версии 3.7.3, для установки запустите установщик из папки 'assets' (в корне проекта)
 
 Далее необходимио установить пакетный менеджер python poetry и windows choco
 
 Для этого откройте PowerShell от имени администратора, и запустите в нем поочередно следующие команды:
+
+![power shell](https://github.com/kiselevvn/legal-service/blob/main/assets/img/power-shell.PNG?raw=true)
 
 Установка Poetry:
 
