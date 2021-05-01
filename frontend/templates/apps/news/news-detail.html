@@ -7,7 +7,7 @@
     <div class="container">
       <ol>
         <li><a href="{% url 'landing' %}">Главная</a></li>
-        <li><a href="blog.html">Новости</a></li>
+        <li><a href="{% url 'news-list' %}">Новости</a></li>
       </ol>
       <h2>{{ object.title }}</h2>
     </div>
