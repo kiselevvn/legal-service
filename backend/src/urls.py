@@ -10,6 +10,9 @@ urlpatterns = [
     re_path(r"^ckeditor/", include("ckeditor_uploader.urls")),
     path("news/", include("apps.news.urls")),
     path(
+        "privacy/", TemplateView.as_view(template_name="pages/privacy.html"), name="privacy"
+    ),
+    path(
         "", TemplateView.as_view(template_name="landing.html"), name="landing"
     ),
 ]

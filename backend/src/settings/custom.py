@@ -6,6 +6,11 @@ CONSTANCE_CONFIG = {
         "Текстовый логотип сайта",
         str,
     ),
+    "DOMAIN": (
+        "example.com",
+        "Домен",
+        str,
+    ),
     "LOGO_IMG": (
         "",
         "Логотип сайта",
@@ -36,12 +41,23 @@ CONSTANCE_CONFIG = {
         "Наименованиее сайта",
         str,
     ),
+    "PRIVACY_NAME": (
+        "Наименованиее сайта или организации",
+        "Наименование оператора",
+        str,
+    ),
+    "PRIVACY_EMAIL": (
+        "example@example.com",
+        "Электронная Почта",
+        str,
+    ),
 }
 
 CONSTANCE_CONFIG_FIELDSETS = {
     "Логотип": (
         "LOGO_TEXT",
         "LOGO_IMG",
+        "DOMAIN",
     ),
     "Главнная секция сайта": (
         "SITE_NAME",
@@ -51,6 +67,10 @@ CONSTANCE_CONFIG_FIELDSETS = {
         "CONTACT_PHONE",
         "CONTACT_EMAIL",
         "CONTACT_TIME",
+    ),
+    "Политикой обработки персональных данных": (
+        "PRIVACY_NAME",
+        "PRIVACY_EMAIL",
     ),
 }
 
