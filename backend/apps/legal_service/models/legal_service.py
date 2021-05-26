@@ -12,7 +12,7 @@ class LegalService(
     models.Model,
 ):
     """
-    Модель Услуг
+    Модель юридической услуги
     """
 
     picture = models.ImageField(

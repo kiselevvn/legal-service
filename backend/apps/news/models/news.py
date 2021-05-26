@@ -13,7 +13,7 @@ class News(
     models.Model,
 ):
     """
-    Модель новостей
+    Модель новости
     """
 
     picture = models.ImageField(
