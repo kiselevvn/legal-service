@@ -1,5 +1,7 @@
 CONSTANCE_BACKEND = "constance.backends.database.DatabaseBackend"
-CONSTANCE_ADDITIONAL_FIELDS = {"image_field": ["django.forms.ImageField", {}]}
+CONSTANCE_ADDITIONAL_FIELDS = {
+    "image_field": ["django.forms.ImageField", {"required": False}]
+}
 CONSTANCE_CONFIG = {
     "LOGO_TEXT": (
         "LawFirm",
